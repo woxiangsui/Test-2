@@ -7,6 +7,9 @@ do {
 
 if (input == "circle") {
   let radius = readlineSync.question("Enter a radius: ");
+  area = Math.PI * (radius ** 2);
+  area = area.toLocaleString("en");
+  console.log("\n" + area + ".");
 }
 if (input == "rectangle") {
   let length = readlineSync.question("Enter a length: ");
